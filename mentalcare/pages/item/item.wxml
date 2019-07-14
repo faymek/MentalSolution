@@ -1,0 +1,31 @@
+<!--pages/item/item.wxml-->
+<view class='main_container'>
+  <view class='container' style='display:flex;'>
+    <!--左边图片-->
+    <view style='width:256rpx; height:256rpx; margin:10rpx;'>
+      <image class='index-logo' style='width:256rpx; height:256rpx' src="{{thisitem.photo}}"></image>
+    </view>
+    <label class='item_name'>{{thisitem.name}}</label>
+    <label class='item_mood'>{{thisitem.mood}}</label>
+    <view class='item'>
+      <view class='left'>ID</view>
+      <view class='right'>{{thisitem.id}}</view>
+    </view>
+    <view class='item'>
+      <view class='left'>性别</view>
+      <view class='right'>{{thisitem.sexy}}</view>
+    </view>
+    <view class='item'>
+      <view class='left'>家庭情况</view>
+      <view class='right'>{{thisitem.family}}</view>
+    </view>
+    <view class='item'>
+      <view class='left'>建议</view>
+      <view class='right'>{{thisitem.suggestion}}</view>
+    </view>
+    <view class="btns" >
+      <button class="btn_finish">完成安抚</button>
+    </view>
+
+  </view>
+</view>
